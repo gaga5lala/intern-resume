@@ -138,27 +138,6 @@
     font-style: normal;
 }
 /*
- * NotoSansCJKTC-hinted
-================================================================================ */   
-@font-face {
-    font-family: 'NotoSansCJKTC';
-    src: url('fonts/NotoSansCJKTC-hinted/NotoSansCJKtc-Thin.otf');
-    font-weight: lighter;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NotoSansCJKTC';
-    src: url('fonts/NotoSansCJKTC-hinted/NotoSansCJKtc-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'NotoSansCJKTC';
-    src: url('fonts/NotoSansCJKTC-hinted/NotoSansCJKtc-Bold.otf');
-    font-weight: bold;
-    font-style: normal;
-}
-/*
  * Chinese
 ================================================================================ */  
 @font-face {
