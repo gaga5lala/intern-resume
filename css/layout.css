@@ -58,18 +58,19 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 72px/1.1em 'draft', sans-serif;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
+   font: 18px/1.9em 'HanaMinA', serif;
    color: #A8A8A8;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   letter-spacing: 1px;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -130,7 +131,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
+   font: 14px 'NotoSansCJKTC', '微軟正黑體',sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
@@ -181,7 +182,6 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
-
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
@@ -191,15 +191,17 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
+   
 }
 
 #about a, #about a:visited  { color: #fff; }
 #about a:hover, #about a:focus { color: #11ABB0; }
 
 #about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
+   font: 24px/34px '微軟正黑體', sans-serif;
    color: #fff;
    margin-bottom: 12px;
+   font-weight: bold;
 }
 #about p {
    line-height: 30px;
@@ -207,8 +209,11 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
    height: 120px;
+   width: 120px;
+   background-image: url('../images/profilepic.jpg');
+   background-size:cover;
+   background-position:center center; 
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -246,9 +251,10 @@ ul#nav li.current a { color: #F06000; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 24px/36px '微軟正黑體', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
+   font-weight: bold;
 }
 #resume h1 span {
    border-bottom: 3px solid #11ABB0;
@@ -266,11 +272,13 @@ ul#nav li.current a { color: #F06000; }
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
+
 #resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 16px/24px;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
+   font-style: italic;
 }
 #resume .info span {
    margin-right: 5px;
@@ -279,6 +287,22 @@ ul#nav li.current a { color: #F06000; }
 #resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
+}
+
+ul.text-list, ul.text-list li {
+  padding: 0;
+  margin: 0;
+}
+ul.text-list li {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+ul.text-list li:after {
+  content: " | ";
+}
+ul.text-list li:last-child:after {
+  content: none;
 }
 
 /*----------------------------------------------*/
@@ -351,7 +375,15 @@ ul#nav li.current a { color: #F06000; }
     -moz-animation: jquery 2s ease;
     -webkit-animation: jquery 2s ease;
 }
+.english {
+    width: 69.5%;
+    -moz-animation: jquery 2s ease;
+    -webkit-animation: jquery 2s ease;
+}
 
+.SoftwarePackages, .Databases, .OS {
+  margin-bottom: 20px;
+}
 
 
 @-moz-keyframes photoshop {
@@ -439,7 +471,6 @@ ul#nav li.current a { color: #F06000; }
    display: block;
    cursor: pointer;
 }
-
 /* overlay */
 .portfolio-item .item-wrap .overlay {
    position: absolute;
@@ -515,6 +546,9 @@ ul#nav li.current a { color: #F06000; }
 	background: #fff;
 	position: relative;
 	margin: 0 auto;
+}
+.popup-modal img {
+
 }
 .popup-modal .description-box { padding: 12px 36px 18px 36px; }
 .popup-modal .description-box h4 {
