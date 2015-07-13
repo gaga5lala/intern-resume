@@ -267,7 +267,7 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.education, .experience {
+.education, .experience, .skill {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
@@ -304,6 +304,8 @@ ul.text-list li:after {
 ul.text-list li:last-child:after {
   content: none;
 }
+ul.text-list:first-child { margin-top: 30px; }
+ul.text-list:last-child { margin-bottom: 30px; }
 
 /*----------------------------------------------*/
 /*	Skill Bars
@@ -548,7 +550,7 @@ ul.text-list li:last-child:after {
 	margin: 0 auto;
 }
 .popup-modal img {
-
+  margin: 0 auto;
 }
 .popup-modal .description-box { padding: 12px 36px 18px 36px; }
 .popup-modal .description-box h4 {
